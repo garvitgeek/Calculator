@@ -1,0 +1,75 @@
+// Online C++ compiler to run C++ program online
+
+//simple calculator with functionality of exit
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Write C++ code here
+    // variable declaration
+    
+    int a,b;
+    char operator_symbol;
+    string user_input;
+    int result;
+    
+    
+ 
+  
+
+cout<<"lets do some calculation"<<endl;
+    
+      while(user_input != "yes"){
+          
+          
+          
+    cout<<"enter two numbers"<<endl;
+    cin>>a>>b;
+    cout<<"enter the operator symbol"<<endl;
+    cin>>operator_symbol;
+    
+  
+    
+//swicth 
+    
+    switch(operator_symbol){
+        
+        case '+':
+        result = a + b;
+        cout <<"Result is " <<result<<endl;
+        break;
+        
+        
+        case '-':
+        result = a - b;
+        cout <<"Result is " <<result<<endl;
+        break;
+        
+        case '*':
+        result = a * b;
+        cout <<"Result is "<<result<<endl;
+        break;
+        
+        case '/':
+        result = a /b;
+        cout <<"Result is " <<result<<endl;
+        
+    }
+    
+    
+    
+
+cout<<"do you want to exit:yes or no"<<endl;
+cin>>user_input;
+
+
+
+   } //end of while
+
+
+
+
+    return 0;
+}
